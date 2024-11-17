@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз: Животиње и њихови младунци</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        .options {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .options label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+        .option-image {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-top: 5px;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Квиз: Животиње и њихови младунци</h1>
+        <form id="quizForm">
+            <!-- Pitanje 1 -->
+            <div class="question">
+                <p>1. Теле је младунче...</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q1" value="тачно"> A
+                        <img src="krava.jpg" alt="Крава" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="нетачно"> B
+                        <img src="patka.jpg" alt="Патка" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="нетачно"> C
+                        <img src="pas.jpg" alt="Пас" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="нетачно"> D
+                        <img src="konj.jpg" alt="Коњ" class="option-image">
+                    </label>
+                </div>
+            </div>
+            <!-- Pitanje 2 -->
+            <div class="question">
+                <p>2. Ждребе је младунче...</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q2" value="тачно"> A
+                        <img src="konj.jpg" alt="Коњ" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="нетачно"> B
+                        <img src="patka.jpg" alt="Патка" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="нетачно"> C
+                        <img src="jelen.jpg" alt="Јелен" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="нетачно"> D
+                        <img src="lisica.jpg" alt="Лисица" class="option-image">
+                    </label>
+                </div>
+            </div>
+            <!-- Pitanje 3 -->
+            <div class="question">
+                <p>3. Јагње је младунче...</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q3" value="нетачно"> A
+                        <img src="krava.jpg" alt="Крава" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="нетачно"> B
+                        <img src="svinja.jpg" alt="Свиња" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="нетачно"> C
+                        <img src="kokoska.jpg" alt="Кокошка" class="option-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="тачно"> D
+                        <img src="ovca.jpg" alt="Овца" class="option-image">
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="submitQuiz()">Пошаљи одговоре</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            const answers = document.querySelectorAll('input[type="radio"]:checked');
+
+            if (answers.length < 3) { // Adjust number based on the total questions
+                document.getElementById('result').innerText = "Молимо вас да одговорите на сва питања.";
+                return;
+            }
+
+            // Checking correct answers
+            if (answers[0].name === "q1" && answers[0].value === "тачно") score++;
+            if (answers[1].name === "q2" && answers[1].value === "тачно") score++;
+            if (answers[2].name === "q3" && answers[2].value === "тачно") score++;
+            // Add checks for additional questions...
+
+            document.getElementById('result').innerText = `Ваш резултат је ${score} од 3.`;
+        }
+    </script>
+</body>
+</html>
