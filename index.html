@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="sr">
 <head>
@@ -39,8 +38,8 @@
             margin: 10px;
         }
         .option-image {
-            width: 80px;
-            height: 80px;
+            width: 120px;
+            height: 120px;
             object-fit: contain;
             margin-top: 5px;
         }
@@ -70,19 +69,19 @@
                 <p>1. Теле је младунче...</p>
                 <div class="options">
                     <label>
-                        <input type="radio" name="q1" value="тачно"> A
+                        <input type="radio" name="q1" value="тачно"> 1
                         <img src="krava.jpg" alt="Крава" class="option-image">
                     </label>
                     <label>
-                        <input type="radio" name="q1" value="нетачно"> B
+                        <input type="radio" name="q1" value="нетачно"> 2
                         <img src="patka.jpg" alt="Патка" class="option-image">
                     </label>
                     <label>
-                        <input type="radio" name="q1" value="нетачно"> C
+                        <input type="radio" name="q1" value="нетачно"> 3
                         <img src="pas.jpg" alt="Пас" class="option-image">
                     </label>
                     <label>
-                        <input type="radio" name="q1" value="нетачно"> D
+                        <input type="radio" name="q1" value="нетачно"> 4
                         <img src="konj.jpg" alt="Коњ" class="option-image">
                     </label>
                 </div>
@@ -92,19 +91,19 @@
                 <p>2. Ждребе је младунче...</p>
                 <div class="options">
                     <label>
-                        <input type="radio" name="q2" value="тачно"> A
+                        <input type="radio" name="q2" value="тачно"> 1
                         <img src="konj.jpg" alt="Коњ" class="option-image">
                     </label>
                     <label>
-                        <input type="radio" name="q2" value="нетачно"> B
+                        <input type="radio" name="q2" value="нетачно"> 2
                         <img src="patka.jpg" alt="Патка" class="option-image">
                     </label>
                     <label>
-                        <input type="radio" name="q2" value="нетачно"> C
+                        <input type="radio" name="q2" value="нетачно"> 3
                         <img src="jelen.jpg" alt="Јелен" class="option-image">
                     </label>
                     <label>
-                        <input type="radio" name="q2" value="нетачно"> D
+                        <input type="radio" name="q2" value="нетачно"> 4
                         <img src="lisica.jpg" alt="Лисица" class="option-image">
                     </label>
                 </div>
@@ -114,36 +113,207 @@
                 <p>3. Јагње је младунче...</p>
                 <div class="options">
                     <label>
-                        <input type="radio" name="q3" value="нетачно"> A
+                        <input type="radio" name="q3" value="нетачно"> 1
                         <img src="krava.jpg" alt="Крава" class="option-image">
                     </label>
                     <label>
-                        <input type="radio" name="q3" value="нетачно"> B
+                        <input type="radio" name="q3" value="нетачно"> 2
                         <img src="svinja.jpg" alt="Свиња" class="option-image">
                     </label>
                     <label>
-                        <input type="radio" name="q3" value="нетачно"> C
+                        <input type="radio" name="q3" value="нетачно"> 3
                         <img src="kokoska.jpg" alt="Кокошка" class="option-image">
                     </label>
                     <label>
-                        <input type="radio" name="q3" value="тачно"> D
+                        <input type="radio" name="q3" value="тачно"> 4
                         <img src="ovca.jpg" alt="Овца" class="option-image">
                     </label>
                 </div>
             </div>
 
-            <button type="button" class="submit-btn" onclick="submitQuiz()">Пошаљи одговоре</button>
-        </form>
+            
 
-        <div id="result" class="result"></div>
+    <!-- Pitanje 4 -->
+    <div class="question">
+        <p>4. Јаре је младунче...</p>
+        <div class="options">
+            <label>
+                <input type="radio" name="q4" value="нетачно"> 1
+                <img src="konj.jpg" alt="Крава" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q4" value="тачно"> 2
+                <img src="koza.jpg" alt="Свиња" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q4" value="нетачно"> 3
+                <img src="lisica.jpg" alt="Кокошка" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q4" value="нетачно"> 4
+                <img src="zaba.jpg" alt="Овца" class="option-image">
+            </label>
+        </div>
     </div>
+
+
+     <!-- Pitanje 5 -->
+     <div class="question">
+        <p>5. Штене је младунче...</p>
+        <div class="options">
+            <label>
+                <input type="radio" name="q5" value="нетачно"> 1
+                <img src="koza.jpg" alt="Крава" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q5" value="нетачно"> 2
+                <img src="jelen.jpg" alt="Свиња" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q5" value="тачно"> 3
+                <img src="pas.jpg" alt="Кокошка" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q5" value="нетачно"> 4
+                <img src="krava.jpg" alt="Овца" class="option-image">
+            </label>
+        </div>
+    </div>
+
+    <!-- Pitanje 6 -->
+    <div class="question">
+        <p>6. Пиле је младунче...</p>
+        <div class="options">
+            <label>
+                <input type="radio" name="q6" value="тачно"> 1
+                <img src="kokoska.jpg" alt="Крава" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q6" value="нетачно"> 2
+                <img src="patka.jpg" alt="Свиња" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q6" value="нетачно"> 3
+                <img src="svinja.jpg" alt="Кокошка" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q6" value="нетачно"> 4
+                <img src="jelen.jpg" alt="Овца" class="option-image">
+            </label>
+        </div>
+    </div>
+
+
+
+    <!-- Pitanje 5 -->
+    <div class="question">
+        <p>7. Пуноглавац је младунче...</p>
+        <div class="options">
+            <label>
+                <input type="radio" name="q7" value="нетачно"> 1
+                <img src="patka.jpg" alt="Крава" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q7" value="нетачно"> 2
+                <img src="lisica.jpg" alt="Свиња" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q7" value="нетачно"> 3
+                <img src="kokoska.jpg" alt="Кокошка" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q7" value="тачно"> 4
+                <img src="zaba.jpg" alt="Овца" class="option-image">
+            </label>
+        </div>
+    </div>
+
+
+    <!-- Pitanje 8 -->
+    <div class="question">
+        <p>8. Лане је младунче...</p>
+        <div class="options">
+            <label>
+                <input type="radio" name="q8" value="нетачно"> 1
+                <img src="jelen.jpg" alt="Крава" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q8" value="нетачно"> 2
+                <img src="pas.jpg" alt="Свиња" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q8" value="тачно"> 3
+                <img src="srna.jpg" alt="Кокошка" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q8" value="нетачно"> 4
+                <img src="kamila.jpg" alt="Овца" class="option-image">
+            </label>
+        </div>
+    </div>
+
+
+    <!-- Pitanje 9 -->
+    <div class="question">
+        <p>9. Прасе је младунче...</p>
+        <div class="options">
+            <label>
+                <input type="radio" name="q9" value="нетачно"> 1
+                <img src="konj.jpg" alt="Крава" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q9" value="тачно"> 2
+                <img src="svinja.jpg" alt="Свиња" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q9" value="нетачно"> 3
+                <img src="zaba.jpg" alt="Кокошка" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q9" value="нетачно"> 4
+                <img src="lisica.jpg" alt="Овца" class="option-image">
+            </label>
+        </div>
+    </div>
+
+
+    <!-- Pitanje 5 -->
+    <div class="question">
+        <p>10. Паче је младунче...</p>
+        <div class="options">
+            <label>
+                <input type="radio" name="q10" value="нетачно"> 1
+                <img src="konj.jpg" alt="Крава" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q10" value="нетачно"> 2
+                <img src="kokoska.jpg" alt="Свиња" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q10" value="нетачно"> 3
+                <img src="pas.jpg" alt="Кокошка" class="option-image">
+            </label>
+            <label>
+                <input type="radio" name="q10" value="тачно"> 4
+                <img src="patka.jpg" alt="Овца" class="option-image">
+            </label>
+        </div>
+    </div>
+
+    <button type="button" class="submit-btn" onclick="submitQuiz()">Пошаљи одговоре</button>
+</form>
+
+<div id="result" class="result"></div>
+</div>
+
+
 
     <script>
         function submitQuiz() {
             let score = 0;
             const answers = document.querySelectorAll('input[type="radio"]:checked');
 
-            if (answers.length < 3) { // Adjust number based on the total questions
+            if (answers.length < 10) { // Adjust number based on the total questions
                 document.getElementById('result').innerText = "Молимо вас да одговорите на сва питања.";
                 return;
             }
@@ -152,9 +322,17 @@
             if (answers[0].name === "q1" && answers[0].value === "тачно") score++;
             if (answers[1].name === "q2" && answers[1].value === "тачно") score++;
             if (answers[2].name === "q3" && answers[2].value === "тачно") score++;
+            if (answers[3].name === "q4" && answers[3].value === "тачно") score++;
+            if (answers[4].name === "q5" && answers[4].value === "тачно") score++;
+            if (answers[5].name === "q6" && answers[5].value === "тачно") score++;
+            if (answers[6].name === "q7" && answers[6].value === "тачно") score++;
+            if (answers[7].name === "q8" && answers[7].value === "тачно") score++;
+            if (answers[8].name === "q9" && answers[8].value === "тачно") score++;
+            if (answers[9].name === "q10" && answers[9].value === "тачно") score++;
+            
             // Add checks for additional questions...
 
-            document.getElementById('result').innerText = `Ваш резултат је ${score} од 3.`;
+            document.getElementById('result').innerText = `Ваш резултат је ${score} од 10.`;
         }
     </script>
 </body>
